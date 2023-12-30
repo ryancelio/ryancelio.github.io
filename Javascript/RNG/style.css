@@ -70,11 +70,19 @@ body{
     padding: 5px;
     font-family: Arial, Helvetica, sans-serif;
 }
+#numberDisp:hover .fa-solid.fa-copy{
+    opacity: 1;
+}
+#number{
+    padding-left: 30px;
+}
 .fa-solid.fa-copy{
+    opacity: 0;
     font-size: 0.4em;
     border: 2px solid hsl(0, 0%, 26%);
     padding: 4px 4px;
     color: hsl(0, 0%, 16%);
+    transition: opacity 150ms;
 }
 .fa-solid.fa-copy:hover{
     color: black;
