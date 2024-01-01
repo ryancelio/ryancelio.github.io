@@ -1,138 +1,178 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-body{
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 /* Header */
-#titleBar{
-    text-align: center;
-    font-size: 2.5em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: hsl(64, 97%, 63%);
-    padding: 15px;
-    border: 1px solid black;
-    border-bottom: none;
+#titleBar {
+  text-align: center;
+  font-size: 2.5em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: hsl(64, 97%, 63%);
+  padding: 15px;
+  border: 1px solid black;
+  border-bottom: none;
 }
-#navBarContent{
-    height: 45px;
-    background-color: hsl(0, 0%, 65%);
-    border: 2px solid black;
+#mobileNavbarDrop{
+  display: none;
 }
-#navBarContent ul{
-    list-style-type: none;
-    margin: 0;
-    padding-left: 0;
+#navBarContent {
+  height: 45px;
+  background-color: hsl(0, 0%, 65%);
+  border: 2px solid black;
 }
-#navBarContent ul li a{
-    display: block;
-    float: left;
-    font-size: 1.04em;
-    text-decoration: none;
-    padding: 10px 15px;
-    border-right: 1px solid hsl(0, 0%, 35%);
-    color: black;
+#navBarContent ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
 }
-#navBarContent li a:hover{
-    background-color: hsl(0, 0%, 40%);
+#navBarContent ul li a {
+  display: block;
+  float: left;
+  font-size: 1.04em;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-right: 1px solid hsl(0, 0%, 35%);
+  color: black;
 }
-#navBarContent li a:active{
-    background-color: hsl(0, 0%, 60%);
+#navBarContent li a:hover {
+  background-color: hsl(0, 0%, 40%);
 }
-.fa-solid.fa-house{
-    padding-right: 6px;
-    font-size: 1.1em;
+#navBarContent li a:active {
+  background-color: hsl(0, 0%, 60%);
 }
-.fa-solid.fa-globe{
-    padding-right: 6px;
-    font-size: 1.15em;
+.fa-solid.fa-house {
+  padding-right: 6px;
+  font-size: 1.1em;
 }
-.fa-solid.fa-question{
-    padding-right: 6px;
-    font-size: 1.15em;
+.fa-solid.fa-globe {
+  padding-right: 6px;
+  font-size: 1.15em;
 }
-.fa-brands.fa-js{
-    padding-right: 6px;
-    font-size: 1.15em;
+.fa-solid.fa-question {
+  padding-right: 6px;
+  font-size: 1.15em;
+}
+.fa-brands.fa-js {
+  padding-right: 6px;
+  font-size: 1.15em;
 }
 
 /* Main */
-#numberDisp{
-    display: block;
-    text-align: center;
-    align-items: center;
-    height: 100px;
-    font-size: 4.5em;
-    background-color: hsl(0, 0%, 75%);
-    padding: 5px;
-    font-family: Arial, Helvetica, sans-serif;
+#numberDisp {
+  display: block;
+  text-align: center;
+  align-items: center;
+  height: 100px;
+  font-size: 4.5em;
+  background-color: hsl(0, 0%, 75%);
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.fa-solid.fa-copy{
-    font-size: 0.4em;
-    border: 2px solid hsl(0, 0%, 26%);
-    padding: 4px 4px;
-    color: hsl(0, 0%, 16%);
+#numberDisp:hover .fa-solid.fa-copy {
+  opacity: 1;
 }
-.fa-solid.fa-copy:hover{
-    color: black;
-    border-color: black;
+#number {
+  padding-left: 30px;
 }
-.fa-solid.fa-copy:active{
-    color: hsl(0, 0%, 16%);
-    border-color: hsl(0, 0%, 26%);
+.fa-solid.fa-copy {
+  opacity: 0;
+  font-size: 0.4em;
+  border: 2px solid hsl(0, 0%, 26%);
+  padding: 4px 4px;
+  color: hsl(0, 0%, 16%);
+  transition: opacity 150ms;
 }
-#controls{
-    text-align: center;
-    padding: 5px;
-    border-top: 1px solid black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.fa-solid.fa-copy:hover {
+  color: black;
+  border-color: black;
 }
-.numberInput{
-    font-size: 1.2em;
-    padding: 5px;
+.fa-solid.fa-copy:active {
+  color: hsl(0, 0%, 16%);
+  border-color: hsl(0, 0%, 26%);
 }
-.labels{
-    padding-left: 15px;
-    font-size: 1.2em;
+#controls {
+  text-align: center;
+  padding: 5px;
+  border-top: 1px solid black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-#genBtnDiv{
-    margin-top: 15px;
+.numberInput {
+  font-size: 1.2em;
+  padding: 5px;
 }
-#Generate{
-    font-size: 2em;
-    border: 2px solid gray;
-    border-radius: 10px;
-    background-color: hsl(64, 97%, 63%);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.labels {
+  padding-left: 15px;
+  font-size: 1.2em;
 }
-#Generate:hover{
-    background-color: hsl(64, 70%, 55%);
+#genBtnDiv {
+  margin-top: 15px;
 }
-#Generate:active{
-    background-color: hsl(64, 97%, 63%);
+#Generate {
+  font-size: 2em;
+  border: 2px solid gray;
+  border-radius: 10px;
+  background-color: hsl(64, 97%, 63%);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-#checkDiv{
-    margin: 15px;
+#Generate:hover {
+  background-color: hsl(64, 70%, 55%);
+}
+#Generate:active {
+  background-color: hsl(64, 97%, 63%);
+}
+#checkDiv {
+  margin: 15px;
 }
 
 /* Footer */
-footer{
-    margin-top: auto;
-    height: 8vh;
+footer {
+  margin-top: auto;
+  height: 8vh;
+  width: 100%;
+  border-top: 2px solid black;
+  padding: 10px;
+  background-color: hsl(0, 0%, 45%);
+}
+footer a {
+  color: hsl(64, 97%, 63%);
+}
+footer a:hover {
+  color: hsl(64, 70%, 55%);
+}
+footer label,
+.fa-regular.fa-copyright {
+  padding-top: 5px;
+}
+@media only screen and (max-width: 600px) {
+  #mobileNavbarDrop{
+    display: block;
+    text-align: center;
+    font-size: 2em;
+    background-color: hsl(0, 0%, 65%);
+    border: 2px solid black;
+    transition: all 150ms;
+  }
+  #mobileNavbarDrop:hover{
+    background-color: hsl(0, 0%, 57%);
+  }
+  #mobileNavbarDrop:active{
+    background-color: hsl(0, 0%, 60%);
+  }
+  #navBarContent {
+    display: none;
+    height: fit-content;
+    position: relative;
     width: 100%;
-    border-top: 2px solid black;
-    padding: 10px;
-    background-color: hsl(0, 0%, 45%);
-}
-footer a{
-    color: hsl(64, 97%, 63%);
-}
-footer a:hover{
-    color: hsl(64, 70%, 55%)
-}
-footer label, .fa-regular.fa-copyright{
-    padding-top: 5px;
+    z-index: 99;
+  }
+  #navBarContent ul li a{
+    float: none;
+    text-align: center;
+    border: 1px dotted black;
+  }
 }
