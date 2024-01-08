@@ -6,8 +6,8 @@ const isAutoCopy = document.getElementById("isAutoCopy");
 function copyContent(element) {
   navigator.clipboard.writeText(element.textContent);
 }
+// Returns a random number with inclusive max
 function getRandomNumber(min, max) {
-  // Returns a random number with inclusive max
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
@@ -30,10 +30,10 @@ copy.onclick = function () {
 const mobileNavAct = document.getElementById("mobileNavbarDrop");
 const navBar = document.getElementById("navBarContent");
 
-mobileNavAct.onclick = function() {
-    if(navBar.style.display != "block"){
-        navBar.style.display = 'block';
-    }else if(navBar.style.display == "block"){
-        navBar.style.display = 'none';
-    }
-}
+mobileNavAct.onclick = function () {
+  if (navBar.style.display != "block") {
+    navBar.style.display = "block";
+  } else if (navBar.style.display == "block") {
+    navBar.style.display = "none";
+  }
+};

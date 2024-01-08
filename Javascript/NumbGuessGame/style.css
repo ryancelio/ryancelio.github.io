@@ -66,70 +66,62 @@ header {
   padding-right: 6px;
   font-size: 1.15em;
 }
-
 /* Main */
-main {
-  height: 100%;
-}
-#gallery {
-  margin: 50px;
-}
-.posters {
-  display: flexbox;
-  flex-wrap: wrap;
-  width: 280px;
-  height: 380px;
-  background-color: hsl(0, 0%, 33%);
-  float: left;
-  margin: 20px;
-  border: 1px solid black;
-  transition: all 350ms ease;
-}
-.posters .posterImg {
+.contentDiv {
   width: 100%;
-  height: 93%;
-}
-.posterDesc {
   text-align: center;
-  font-size: 1.2em;
 }
-.posterDesc a {
-  text-decoration: none;
-  color: hsl(0, 0%, 85%);
-  text-shadow: 0px 0px 5px hsl(0, 0%, 21%);
+#PreGame {
+  text-align: center;
 }
-.posters:hover {
-  transform: scale(105%);
-  box-shadow: 1px 1px 5px hsl(0, 0%, 17%);
-  background-color: hsl(64, 97%, 63%);
-}
-.posters:hover .posterDesc a {
-  color: rgb(24, 24, 24);
-}
-.posters:active {
-  transform: scale(100%) rotate(0deg);
-  transition: all 200ms ease;
-}
-/* Footer */
-footer {
-  margin-top: auto;
-  height: 5vh;
-  width: 100%;
-  border-top: 2px solid black;
-  padding: 10px;
-  background-color: hsl(0, 0%, 45%);
-}
-footer a {
-  color: hsl(64, 97%, 63%);
-}
-footer a:hover {
-  color: hsl(64, 70%, 55%);
-}
-footer label,
-.fa-regular.fa-copyright {
-  padding-top: 5px;
+#StartGame {
+  font-size: 2em;
+  margin: 25px;
 }
 
+#difficulty {
+  font-size: 1.8em;
+  text-align: center;
+}
+#Number {
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 250px;
+  font-size: 3em;
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+.fa-solid.fa-caret-up.fa-shake {
+  font-size: 2em;
+  animation-iteration-count: 1;
+  color: hsl(0, 100%, 50%);
+}
+.fa-solid.fa-caret-down.fa-shake {
+  font-size: 2em;
+  animation-iteration-count: 1;
+  color: hsl(0, 100%, 50%);
+}
+.fa-solid.fa-check.fa-shake {
+  font-size: 2em;
+  animation-iteration-count: 1;
+  color: hsl(133, 100%, 50%);
+}
+#guessesLabel {
+  display: none;
+  font-size: 2em;
+}
+#Guess {
+  font-size: 2em;
+  margin: 25px;
+}
+#Restart {
+  font-size: 1.5em;
+  margin: 0px;
+}
+#Game {
+  display: none;
+}
 @media only screen and (max-width: 600px) {
   #mobileNavbarDrop {
     display: block;

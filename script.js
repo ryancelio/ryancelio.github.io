@@ -1,3 +1,4 @@
+// Mobile Navbar
 const mobileNavAct = document.getElementById("mobileNavbarDrop");
 const navBar = document.getElementById("navBarContent");
 
