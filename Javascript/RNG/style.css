@@ -17,7 +17,7 @@ body {
   border: 1px solid black;
   border-bottom: none;
 }
-#mobileNavbarDrop{
+#mobileNavbarDrop {
   display: none;
 }
 #navBarContent {
@@ -149,7 +149,7 @@ footer label,
   padding-top: 5px;
 }
 @media only screen and (max-width: 600px) {
-  #mobileNavbarDrop{
+  #mobileNavbarDrop {
     display: block;
     text-align: center;
     font-size: 2em;
@@ -157,10 +157,10 @@ footer label,
     border: 2px solid black;
     transition: all 150ms;
   }
-  #mobileNavbarDrop:hover{
+  #mobileNavbarDrop:hover {
     background-color: hsl(0, 0%, 57%);
   }
-  #mobileNavbarDrop:active{
+  #mobileNavbarDrop:active {
     background-color: hsl(0, 0%, 60%);
   }
   #navBarContent {
@@ -170,7 +170,7 @@ footer label,
     width: 100%;
     z-index: 99;
   }
-  #navBarContent ul li a{
+  #navBarContent ul li a {
     float: none;
     text-align: center;
     border: 1px dotted black;
