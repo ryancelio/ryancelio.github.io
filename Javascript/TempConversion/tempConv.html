@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Conversion</title>
+    <link rel="stylesheet" href="tempCss.css" />
+    <script
+      src="https://kit.fontawesome.com/45e4b6ae64.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div id="titleBar">Javascript</div>
+      <div id="navBar">
+        <div id="mobileNavbarDrop">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div id="navBarContent">
+          <ul>
+            <li>
+              <a href="../index.html"><i class="fa-solid fa-house"></i>Home</a>
+            </li>
+            <li>
+              <a href=""><i class="fa-solid fa-globe"></i>Gallery</a>
+            </li>
+            <li>
+              <a href="/Javascript/index.html"
+                ><i class="fa-brands fa-js"></i>Javascript</a
+              >
+            </li>
+            <li>
+              <a href=""><i class="fa-solid fa-question"></i>About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- Main Content -->
+    <div id="tempConvertdiv">
+      <h1>Temperature Conversion</h1>
+      <input type="number" id="originalNumb" value="0" onchange="convert()" />
+      <label id="degLabel">º</label>
+      <br />
+
+      <input type="radio" name="unit" id="toFahrenheit" onchange="convert()" />
+      <label for="toFahrenheit" class="unit">Celsius → Fahrenheit</label><br />
+
+      <input type="radio" name="unit" id="toCelsius" onchange="convert()" />
+      <label for="toCelsius" class="unit">Fahrenheit → Celsius</label><br />
+
+      <button type="button" onclick="convert()" id="submit">Submit</button>
+      <p id="result"></p>
+    </div>
+    <script src="tempJs.js"></script>
+  </body>
+</html>
