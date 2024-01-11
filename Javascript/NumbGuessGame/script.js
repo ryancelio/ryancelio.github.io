@@ -49,6 +49,7 @@ Guess.onclick = function () {
     reset_animation();
     guessNumberDisp.textContent = guesses;
     guessesLabel.style.display = "block";
+    Guess.style.display = "none";
   } else if (number > numbToGuess) {
     guesses++;
     rightOrNot.className = "fa-solid fa-caret-down fa-shake";
@@ -64,6 +65,7 @@ Restart.onclick = function () {
   Game.style.display = "none";
   guessesLabel.style.display = "none";
   guesses = 0;
+  Guess.style.display = "inline-block";
   rightOrNot.className = "";
 };
 
