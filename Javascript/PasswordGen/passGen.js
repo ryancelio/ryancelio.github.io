@@ -43,7 +43,7 @@ function displayPassword() {
     includeSymbols
   );
   if (length <= 0) {
-    errorDisp.textContent = `Password length cannot be ${lenght}`;
+    errorDisp.textContent = `Password length cannot be ${length}`;
   } else if (
     !includeLowerase &&
     !includeUppercase &&
